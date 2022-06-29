@@ -49,7 +49,7 @@ function OrderPage() {
     const onSuccessHandler = (paymentResult) => {
         console.log(paymentResult)
         dispatch(payOrder(id, paymentResult))
-        localStorage.removeItem('cartItems')
+        localStorage.removeItem('cartItems')        
     }
 
 

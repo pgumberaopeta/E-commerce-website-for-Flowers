@@ -23,14 +23,18 @@ function PlaceOrder() {
             email: loginReducer.currentUser.email
 
         }))
+        
         localStorage.removeItem('cartItems')
 
 
     }
 
     useEffect(() => {
+        localStorage.removeItem('cartItems')
+
         if (success) {
             navigate(`/order/${order._id}`)
+
         }
         //eslint-disable-next-line
     }, [success])
