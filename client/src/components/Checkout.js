@@ -23,7 +23,7 @@ function Checkout({ amount }) {
                 amount={amount * 100}
                 billingAddress
                 shippingAddress
-                currency='INR'
+                currency='USD'
                 stripeKey='pk_test_51KyfVaSJLir7fHVulZxhHssma3gmCzeGzOuavMBhjZjp3ExF4pMdH1HfZRmSJwIsgC6M1kkXLPl2dfz9EIqUFPrv00b8fuTkPj'
 
             >

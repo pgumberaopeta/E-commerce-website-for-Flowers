@@ -19,7 +19,7 @@ function HomePage() {
             <div className="row justify-content-center">
             
 
-                <h2 className='my-5'><Badge bg="secondary">Today's Top Deals</Badge></h2>
+                <h2 className='navbar-brand text-white bold'>Welcome to House of Flowers</h2>
                 <Filter />
                 {
                     loading ?
