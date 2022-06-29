@@ -20,7 +20,7 @@ module.exports = async (data, mailType) => {
         const verifyToken = await bcrypt.hashSync(data._id.toString(), 10).replaceAll('/', '')
         const token = new Token({ userid: data._id, token: verifyToken })
         await token.save()
-        const content = `<div><h1>Please verify your mail by clicking this link</h1></br><a href="http://localhost:3000/verify/${verifyToken}">Click this token</a></div>`
+        const content = `<div><h1>Please verify your mail by clicking this link</h1></br><a href="https://flower-ecom.herokuapp.com/verify/${verifyToken}">Click this token</a></div>`
 
         console.log(content);
         console.log(data.email);
